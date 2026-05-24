@@ -22,6 +22,8 @@ Flow is a real-time project management workspace for teams. It includes project 
 
 ![Flow dashboard](docs/screenshots/dashboard.png)
 
+![Flow my tasks](docs/screenshots/my-tasks.png)
+
 ![Flow timeline](docs/screenshots/timeline.png)
 
 ![Flow analytics](docs/screenshots/analytics.png)
