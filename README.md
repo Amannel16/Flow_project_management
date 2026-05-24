@@ -154,7 +154,25 @@ npm run format     # Format files with Prettier
 
 ## Deployment
 
-This project includes `wrangler.jsonc` and uses the Cloudflare Vite plugin through the Lovable TanStack config.
+### Vercel
+
+This app is configured for Vercel with Nitro, which is the supported Vercel deployment path for TanStack Start apps.
+
+In Vercel, use:
+
+- Framework Preset: `TanStack Start` if available, otherwise Vercel can detect Nitro from the build
+- Build Command: `npm run build`
+- Install Command: `npm install`
+
+Add these environment variables in the Vercel project settings:
+
+```env
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+SUPABASE_URL=your_supabase_project_url
+SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
+```
 
 Build the app:
 
@@ -162,9 +180,13 @@ Build the app:
 npm run build
 ```
 
-Then deploy with Wrangler using your Cloudflare account configuration.
+Then connect the repository to Vercel and deploy.
 
-Make sure the required Supabase environment variables are configured in the deployment environment before publishing.
+### Cloudflare
+
+This project still includes `wrangler.jsonc`, but the Vite build is currently configured for Vercel by disabling the Cloudflare build plugin and enabling Nitro.
+
+To deploy to Cloudflare again, switch the Vite config back to the Cloudflare plugin path before building.
 
 ## Main Routes
 
