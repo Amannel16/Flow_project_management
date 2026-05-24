@@ -2,6 +2,30 @@
 
 Flow is a real-time project management workspace for teams. It includes project dashboards, kanban boards, task assignment, comments, notifications, timeline views, and analytics.
 
+## Screenshots
+
+### Landing Page
+
+![Flow landing page](docs/screenshots/landing.png)
+
+### Feature Overview
+
+![Flow feature overview](docs/screenshots/features.png)
+
+### Authentication
+
+![Flow signup page](docs/screenshots/signup.png)
+
+![Flow login page](docs/screenshots/login.png)
+
+### Workspace
+
+![Flow dashboard](docs/screenshots/dashboard.png)
+
+![Flow timeline](docs/screenshots/timeline.png)
+
+![Flow analytics](docs/screenshots/analytics.png)
+
 ## Features
 
 - Email/password authentication with Supabase Auth
@@ -158,4 +182,3 @@ Make sure the required Supabase environment variables are configured in the depl
 - Project owners are automatically added to `project_members`.
 - Project access is controlled through Supabase RLS policies.
 - Realtime subscriptions are used throughout the app to refresh collaborative views.
-# Flow_project_management
